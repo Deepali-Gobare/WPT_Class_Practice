@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      a;
+      b;
+      val;
+      function calci() {
+        a = prompt("Enter value for a.");
+        b = prompt("Enter value for b.");
+
+        val = prompt(
+          "Enter 1 for addition /n Enter 2 for substraction /n Enter 3 for numtiplication /n Enter 4 for division"
+        );
+
+        switch (val) {
+          case "1":
+            document.write(a + "+" + b + "=" + (+a + +b));
+            break;
+          case "2":
+            document.write(a + "-" + b + "=" + (+a - +b));
+            break;
+          case "3":
+            document.write(a + "*" + b + "=" + +a * +b);
+            break;
+          case "4":
+            document.write(a + "/" + b + "=" + +a / +b);
+            break;
+          default:
+            document.write("invalid");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      calci();
+    </script>
+  </body>
+</html>

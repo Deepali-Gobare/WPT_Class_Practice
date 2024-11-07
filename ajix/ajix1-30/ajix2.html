@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <div id="continer"></div>
+    <input type="button" value="fetchdata" onclick="fetchdata()" />
+
+    <script>
+      function fetchdata() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+        xhr.send();
+
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            const data = JSON.parse(xhr.responseText);
+            const continer1 = document.getElementById("continer");
+            for (let i = 0; i < data.length; i++) {
+              const para = document.createElement("p");
+              para.innerHTML = data[i].id + " " + data[i].name;
+              continer1.appendChild(para);
+            }
+          }
+        };
+
+        request;
+      }
+    </script>
+  </body>
+</html>

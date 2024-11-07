@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+  background-color: black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Netflix Font", sans-serif;
+  color: rgb(229, 9, 20);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding: 30%; */
+  color: white;
+  color: rgb(229, 9, 20);
+  /* text-shadow: 10px 10px 20px black, 0 0 25px blue, 0 0 5px darkblue; */
+  
+  text-shadow: 20px 20px 20px  rgb(229, 9, 20);
+ 
+}
+
+

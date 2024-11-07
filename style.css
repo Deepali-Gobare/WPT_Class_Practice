@@ -1,0 +1,26 @@
+body {
+  background: url(photos/backgroundimg.jpg) no-repeat;
+  background-size: cover;
+  align-items: center;
+
+}
+
+.u1 {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.u1 li {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  margin: 10px 0; /* Add some space between list items */
+}
+
+.circular-image {
+  width: 40px; /* Set desired width */
+  height: 40px; /* Set desired height */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the area */
+  margin-right: 10px; /* Space between image and text */
+}

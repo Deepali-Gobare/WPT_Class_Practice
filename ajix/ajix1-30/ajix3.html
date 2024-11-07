@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="4" cellspacing="0">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>phone num</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody id="th"></tbody>
+    </table>
+    <button onclick="fun()">fetch the data</button>
+    <script>
+      function fun() {
+        const xh = new XMLHttpRequest();
+        xh.open("GET", "https://jsonplaceholder.typicode.com/users");
+        xh.send();
+        xh.onreadystatechange = () => {
+          if (xh.readyState == 4 && xh.status == 200) {
+            const data = JSON.parse(xh.responseText);
+            const cont = document.getElementById("th");
+            for (let i = 0; i < data.length; i++) {
+              const row = document.createElement("tr");
+              const idcol = document.createElement("td");
+              const namecol = document.createElement("td");
+              const phonecol = document.createElement("td");
+              const emailcol = document.createElement("td");
+              idcol.innerHTML = data[i].id;
+              namecol.innerHTML = data[i].name;
+              phonecol.innerHTML = data[i].phone;
+              emailcol.innerHTML = data[i].email;
+              row.appendChild(idcol);
+              row.appendChild(namecol);
+              row.appendChild(phonecol);
+              row.appendChild(emailcol);
+              cont.appendChild(row);
+            }
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

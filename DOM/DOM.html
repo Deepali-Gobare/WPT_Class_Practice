@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <!-- <style>
+       #id {
+        font-size: larger;
+      }
+      .c1 {
+        font-style: italic;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Dom properties -->
+
+    <!-- <h1>TRf56</h1>
+    <script> -->
+
+    <!-- // document.write(`${document.title}<br>`);
+    //   document.title = "title123";
+    // document.write(`${document.URL}<br>`);
+    // document.write(`${document.meta}<br>`);
+    //   const h = document.head;
+    //   document.write(`${h}<br>`);
+
+    //   document.write(`${document.images}<br>`);
+    //   document.write(`${document.forms}<br>`);
+    //   document.write(`${document.links}<br>`);
+    //   document.write(`${document.body}<br>`);
+ 
+    // </script> -->
+
+    <!-- document methods -->
+
+    <!-- <h1 id="H1">Hello world</h1>
+    <input type="radio" id="id1" name="color" /><label>Red</label><br />
+    <input type="radio" id="id1" name="color" /><label>Green</label><br />
+    <input type="radio" id="id1" name="color" /><label>Blue</label><br />
+    <script>
+      let a = document.getElementById("H1");
+      document.write(`${a}<br>`);//this writes the class of the tag
+      let b = document.getElementsByName("color");
+      document.write(`${b}`);
+    </script> -->
+
+    <!-- querySelector and querySelectorAll -->
+
+    <!-- <div id="id1">hello world</div>
+    <p id="id1">gjiuerhgngvkjdnhiugrehig</p>
+    <p class="c1">gjiuerhgngvkjdnhiugrehig</p>
+    <h1 class="c1">hefhfgwugyr</h1>
+    <strong class="c1">jhfgbhjfgbhrrb</strong><br>
+    <script>
+      document.write(`${document.querySelector("#id1")}<br>`);
+      document.write(`${document.querySelectorAll("#id1")}<br>`);//writs the class of single tag
+      document.write(`${document.querySelector(".c1")}<br>`);//it take the starting tag and writes it class
+      document.write(`${document.querySelectorAll(".c1")}<br>`);//consider all the tags in one go
+    </script> -->
+
+    <!-- <p id="id1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat cumque quaerat in, quae quo! Accusantium doloremque architecto maiores aliquid cupiditate officia voluptate! Ad minima amet, sunt iusto mollitia quia.</p> -->
+
+    <!-- paired and unpaird tag -->
+
+    <!-- <h1 id="h1">Hello</h1>
+    <input type="text" name="JemesBond" value="007" id="jb" />
+
+    <script>
+      let ab = document.querySelector("#h1");
+
+      document.write(`${ab.innerHTML}`);
+
+      ab.innerHTML = `hey`;
+      ab.innerHTML += "DK";
+
+      ab.innerHTML = ` `;
+
+      let ba = document.querySelector("#jb");
+
+      document.write(`${ba.value}`);
+
+      ba.value = 9876;
+      ba.value = ba.value + 1234;
+
+      ba.value=` `;
+    </script> -->
+
+    <!-- InnerTEXT and innerhtml -->
+
+    <!-- <div id="id1"></div>
+    <div id="id2"></div>
+    <script>
+      const d1 = document.querySelector("#id1");
+      const d2 = document.querySelector("#id2");
+      d1.innerHTML = "mango 1kg  <strong>&#8377;200</strong>";
+      d2.innerText = "mango 1kg  <strong>&#8377;200</strong>";
+    </script> -->
+
+    <!-- <h1>Hi</h1>
+    <button onclick="update()">Update the heading</button>
+    <button onclick="document.querySelector('h1').innerHTML=``">
+      delete the heading
+    </button>
+    <script>
+      function update() {
+        const a = document.querySelector("h1");
+        let name = prompt("type your good name");
+        a.innerText = `hi ${name}`;
+      }
+    </script> -->
+
+    <img src="photos\rat.jfif" />
+    <script>
+      const i = document.querySelector("img");
+      i.title = "Img of rat";
+    </script>
+  </body>
+</html>

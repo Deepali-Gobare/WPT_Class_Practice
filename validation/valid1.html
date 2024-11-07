@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .error-text {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form action="https://chatgpt.com/" onsubmit="return validate()">
+      <input
+        type="text"
+        placeholder="enter your good name"
+        id="name"
+        onkeyup="validname()"
+      />
+      <span id="name-error" class="error-text"></span>
+      <br />
+      <input type="password" placeholder="your password is!" id="pass" />
+      <span id="pass-error" class="error-text"></span>
+      <hr />
+      <button type="submit">login</button>
+    </form>
+    <script>
+      function validate() {
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("pass").value;
+        var flag = true;
+        if (name.length == 0) {
+          document.getElementById("name-error").innerHTML = "name is required";
+          flag = false;
+        }
+        if (pass.length == 0) {
+          document.getElementById("password").innerHTML = "pass is required";
+          flag = false;
+        }
+        return flag;
+      }
+      function validname() {
+        const name = document.getElementById("name").value;
+        if (name == 0) {
+          document.getElementById("name-error").innerHTML = "name is required";
+          return false;
+        }
+        document.getElementById("name-error").innerHTML = "";
+        return true;
+      }
+    </script> -->
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          .error-text {
+            color: red;
+          }
+        </style>
+      </head>
+      <body>
+        <form action="https://www.google.com" onsubmit="return validate()">
+          <input
+            type="text"
+            placeholder="enter name"
+            id="name"
+            onKeyUp="validateName()"
+          />
+          <span id="error" class="error-text"></span>
+          <br /><br />
+          <input type="password" placeholder="enter password" id="password" />
+          <span id="error1" class="error-text"></span>
+          <br /><br />
+          <input type="submit" value="login" />
+        </form>
+        <script>
+          function validate() {
+            const name = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+            var isValid = true;
+            if (name.length == 0) {
+              document.getElementById("error").innerHTML = "name is required";
+              isValid = false;
+            }
+            if (password.length == 0) {
+              document.getElementById("error1").innerHTML =
+                "password is required";
+              isValid = false;
+            }
+            return isValid;
+          }
+
+          function validateName() {
+            const name = document.getElementById("name").value;
+            if (name.length == 0)
+              document.getElementById("error").innerHTML = "name is required";
+            else document.getElementById("error").innerHTML = "";
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

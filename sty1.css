@@ -1,0 +1,38 @@
+body {
+    background: url(photos/jungle.jfif) no-repeat;
+    background-size: cover;
+  }
+  
+  .u1 {
+    list-style: none;
+    margin: 0;
+    padding-left: 00px;
+  }
+  
+  /* .u1 li {
+    background: url(photos/dog.jfif) no-repeat left center;
+    padding-left: 20px;
+  
+    background-size: 20px;
+  } */
+  
+  .u1 > #l1 {
+    background: url(photos/dog.jfif) no-repeat left center;
+    padding-left: 20px;
+    /* margin: 10px; */
+    background-size: 20px;
+    
+  }
+  .u1 > #l2 {
+    background: url(photos/cat.jfif) no-repeat left center;
+    padding-left: 20px;
+    /* margin: 10px; */
+    background-size: 20px;
+  }
+  .u1 > #l3 {
+    background: url(photos/horse.jfif) no-repeat left center;
+    padding-left: 20px;
+    /* margin: 10px; */
+    background-size: 20px;
+  
+  } 
